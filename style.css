@@ -5,9 +5,13 @@ body
     
     font-family: Raleway,sans-serif;
 }
-h1,h2
+h1
 {
-    font-weight: bold;
+    font-size: 22px;
+}
+h2
+{
+   
 }
 .container
 {
@@ -52,4 +56,60 @@ header nav ul li a:hover
 {
     color: #0065FC;
     border-top:   3px  #0065FC solid ;   
+}
+
+/* RECHERCHE */
+
+#recherche
+{
+    margin-top: 45px;
+}
+#recherche h1:first-of-type
+{
+    margin-bottom: 0px;
+}
+#recherche p:first-of-type 
+{
+    margin-top: 14px;
+}
+
+#logo
+{
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#champ div:nth-of-type(2) input  /* champs de texte */
+{
+    font-weight: bold;
+    width: 234px;
+    height: 48px;
+    font-size: 16px;
+    border: 1px solid #F2F2F2;
+}
+#champ
+{
+    display: flex;
+}
+#champ div:nth-of-type(3) input /* Boutton */
+{
+    width: 135px;
+    height: 53px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+#champ div:nth-of-type(3) input:hover
+{
+    cursor: pointer;
+    font-size: 17px;
 }
