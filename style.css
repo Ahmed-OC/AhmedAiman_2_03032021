@@ -200,3 +200,52 @@ justify-content: center;
     align-self: center;
     font-size: 15.5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer
+{
+    background-color: #F2F2F2;
+    height: 118px;
+    margin-top: 53px;
+    display: flex;
+    padding: 50px;
+}
+footer div h4
+{
+    font-size: 18px;
+    margin-bottom: 23px;
+}
+footer ul li 
+{
+    list-style: none;
+    margin-bottom: 9px;
+}
+footer ul li a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+#apropos
+{
+    margin-right: 227px;
+}
+#noshebergements
+{
+    margin-right: 292px;
+}
+footer ul li a:hover
+{
+    font-weight: bold;
+}
