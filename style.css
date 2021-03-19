@@ -18,6 +18,8 @@ h1
     margin-right: 53px;
 }
 
+
+
 /* HEADER */
 
 header
@@ -58,22 +60,24 @@ header nav ul li a:hover
     border-top:   3px  #0065FC solid ;   
 }
 
+
+
 /* RECHERCHE */
 
 #recherche
 {
     margin-top: 45px;
 }
-#precherche1
+.precherche1
 {
     margin-top: 14px;
 }
-#h1recherche1
+.h1recherche1
 {
     margin-bottom: 0px; ;
 }
 
-#logo
+.logo
 {
 background-color: #F2F2F2;
 border-bottom-left-radius: 20px ;
@@ -87,12 +91,12 @@ justify-content: center;
 
 
 }
-#champ
+.champ
 {
     display: flex;
     margin-top: 17px;
 }
-#champ div:nth-of-type(2) input 
+.champ div:nth-of-type(2) input 
 {
     font-weight: bold;                  /* CHAMP TEXT */
     width: 234px;
@@ -104,7 +108,7 @@ justify-content: center;
 }
 
 
-#champ div:nth-of-type(3) input
+.champ div:nth-of-type(3) input
 {
     width: 135px;
     height: 53px;                       /* BOUTTON RECHERCHER*/
@@ -116,12 +120,12 @@ justify-content: center;
     font-size: 16px;
     border:1px solid #F2F2F2;
 }
-#champ div:nth-of-type(3) input:hover
+.champ div:nth-of-type(3) input:hover
 {
     cursor: pointer;
     font-size: 17px;
 }
-#filtres
+.filtres
 {
     margin-top: 31px;
     display: flex;
@@ -152,7 +156,7 @@ justify-content: center;
     position: relative;
     left: 22px;
 }
-#filtres h4
+.filtres h4
 {
     align-self: center;
     font-size: 18.5px;
@@ -169,21 +173,21 @@ justify-content: center;
     font-weight: bold;
     font-size: 18px;
 }
-#filtres div input:hover
+.filtres div input:hover
 {
     font-size: 20px;
     color: #0065FC;
 }
 
 
-#info
+.info
 {
     display: flex;
     justify-content: space-between;
     width: 446px;
     margin-top: 35px;
 }
-#info div 
+.info div 
 {
     width: 25px;
     height: 25px;
@@ -195,7 +199,7 @@ justify-content: center;
     border-radius: 20px;
     
 }
-#info p
+.info p
 {
     align-self: center;
     font-size: 15.5px;
@@ -203,12 +207,93 @@ justify-content: center;
 
 
 
-
-
-
-
-
-
+/* HEBERGEMENTS */
+#hebergements
+{
+    margin-top: 37px;
+}
+.divhebergements
+{
+    width: 798px;
+    height: 533px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 47px 33px 46px 50px;
+}
+.divhebergements h1
+{
+    font-size: 22.5px;
+}
+.lieuxhebergements
+{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 428px;
+}
+.lieuisole
+{
+    text-decoration: none;
+    color: black;
+    width: 236px;
+    height: 184px;
+    padding: 5px 5px 10px 5px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #E3E3E3;
+}
+.legendeheb
+{
+    display: flex;
+    height: 59px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 12px 0px 0px 11px;
+    
+}
+.ImHeb            
+{
+    height: 114px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+.PosImHeb
+{
+   width: 246px;
+   position: relative;
+   height: 114px;
+   right: 6px;
+   object-fit: cover;
+}
+.legendeheb p
+{
+    font-size: 13.5px;
+}
+.legendeheb h4
+{
+    font-size: 16.5px;
+}
+.legendeheb div
+{
+    font-size: 11px;  
+}
+.starOn
+{
+    color: #0065FC;
+}
+.starOff
+{
+    color: #d9d9d9;
+}
+.affich
+{
+    margin-top: 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 19px;
+}
 
 
 
@@ -237,11 +322,11 @@ footer ul li a
     color: black;
     
 }
-#apropos
+.apropos
 {
     margin-right: 227px;
 }
-#noshebergements
+.noshebergements
 {
     margin-right: 292px;
 }
