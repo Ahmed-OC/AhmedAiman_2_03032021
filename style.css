@@ -175,7 +175,7 @@ justify-content: center;
 }
 .filtres div input:hover
 {
-    font-size: 20px;
+    transform: scale(1.05);
     color: #0065FC;
 }
 
@@ -207,9 +207,12 @@ justify-content: center;
 
 
 
+
+
 /* HEBERGEMENTS */
 #hebergements
 {
+    display: flex;
     margin-top: 37px;
 }
 .divhebergements
@@ -294,6 +297,225 @@ justify-content: center;
     display: inline-block;
     font-size: 19px;
 }
+
+
+.divpopu
+{
+    width: 345px;
+    height: 548px;
+    padding: 42px 38px 30px 38px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+.titrepopu
+{
+    display: flex;
+    justify-content: space-between;
+}
+.titrepopu i 
+{
+    font-size: 22.5px;
+}
+.titrepopu h1
+{
+    font-size: 22.5px;
+}
+.hebergementpopu
+{
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 498px;
+}
+.popisole
+{
+    text-decoration: none;
+    color: black;
+    width: 286px;
+    height: 134px;
+    padding: 5px 52px 5px 5px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #E3E3E3;
+    display: flex;
+}
+.ImPop
+{
+    width: 127px;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+}
+.PosImPop
+{
+   width: 127px;
+   position: relative;
+   height: 134px;
+   right: 6px;
+   object-fit: cover;
+}
+.legendepop
+{
+    height: 115px;
+    margin: 14px 0px 9px 21px;
+    width: 145px;
+}
+.legendepop p
+{
+    font-size: 13.5px;
+}
+.legendepop h4
+{
+    font-size: 16.5px;
+    margin-bottom: 5px;
+}
+.legendepop div
+{
+    font-size: 11px;
+    margin-top: 35px;  
+}
+
+
+
+
+/* ACTIVITIES */
+#activities
+{
+    margin-top: 65px;
+}
+#activities h1
+{
+    font-size: 22.5px;
+}
+.divActivities
+{
+    margin-top: 27px;
+    height: 445px;
+    width: 1337px;
+    display: flex;
+    justify-content: space-between;
+}
+.act1,.act4
+{
+    width: 302px;
+    height: 446px;
+    box-shadow: 0px 0px 15px #E3E3E3;
+    border-radius: 20px;
+}
+.ImActBig
+{
+    height: 391px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+.PosImActBig
+{
+    width: 302px;
+    height: 446px;
+    object-fit: cover;
+}
+.divActivities a
+{
+    text-decoration: none;
+    color: black;
+}
+.divActivities h4
+{
+    margin: 18px 0px 0px 19px;
+    font-size: 16.5px;
+}
+
+.act2-3, .act5-6
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 302px;
+    height: 446px;
+}
+.a2
+{
+    height: 238px;
+    width: 302px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #E3E3E3;
+}
+.ImAct2
+{
+    height: 182px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+.PosImAct2
+{
+    width: 302px;
+    height: 238px;
+    object-fit: cover;
+}
+.a3
+{
+    height: 164px;
+    width: 302px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #E3E3E3;
+}
+.ImAct3
+{
+    height: 109px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+.PosImAct3
+{
+    width: 302px;
+    height: 164px;
+    object-fit: cover;
+}
+.a5
+{
+    height: 197px;
+    width: 302px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #E3E3E3;
+}
+.ImAct5
+{
+    height: 142px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+.PosImAct5
+{
+    width: 302px;
+    height: 197px;
+    object-fit: cover;
+}
+.a6
+{
+    height: 209px;
+    width: 302px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #E3E3E3;
+}
+.ImAct6
+{
+    height: 153px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+.PosImAct6
+{
+    width: 302px;
+    height: 209px;
+    object-fit: cover;
+}
+.a2:hover , .a3:hover ,.a5:hover,.a6:hover, .act1:hover,.act4:hover , .popisole:hover , .lieuisole:hover
+{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px grey;
+}
+
 
 
 
