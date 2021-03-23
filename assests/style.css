@@ -14,8 +14,8 @@ h1
 
 .container
 {
-    margin-left: 50px;
-    margin-right: 53px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
 }
 
 
@@ -125,6 +125,11 @@ justify-content: center;
     cursor: pointer;
     font-size: 17px;
 }
+.containerfilters
+{
+    display: flex;
+    align-items: baseline;
+}
 .filtres
 {
     margin-top: 31px;
@@ -156,9 +161,12 @@ justify-content: center;
     position: relative;
     left: 22px;
 }
-.filtres h4
+.posfilters
 {
-    align-self: center;
+    display: flex;
+}
+.containerfilters h4
+{
     font-size: 18.5px;
 }
 .filterbuttons
@@ -294,7 +302,6 @@ justify-content: center;
 {
     margin-top: 40px;
     cursor: pointer;
-    display: inline-block;
     font-size: 19px;
 }
 
@@ -546,13 +553,310 @@ footer ul li a
 }
 .apropos
 {
-    margin-right: 227px;
+    margin-right: 15%;
 }
 .noshebergements
 {
-    margin-right: 292px;
+    margin-right: 19%;
 }
 footer ul li a:hover
 {
     font-weight: bold;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:1440px)
+{
+    #hebergements
+    {
+        flex-direction: column-reverse;
+    }
+    .divhebergements,.divpopu 
+    {
+        margin: 0 auto;
+    }
+    .divpopu
+    {
+        width: 798px;
+        height: 266px;
+        margin-bottom: 20px;
+    }
+    .hebergementpopu
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .popisole
+    {
+        text-decoration: none;
+        color: black;
+        width: 236px;
+        height: 200px;
+        padding: 5px 5px 10px 5px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        display: block;
+    }
+    .ImPop
+    {
+        height: 114px;
+        width: auto;
+        border-radius: 20px 20px 0px 0px;
+        overflow: hidden;
+    }
+    .PosImPop
+    {
+        width: 246px;
+        position: relative;
+        height: 114px;
+        right: 6px;
+        object-fit: cover;
+    }
+    .legendepop
+    {
+        display: flex;
+        height: 59px;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 12px 0px 0px 11px;
+        width: auto;
+    }
+    .legendepop div
+    {
+        margin-top: 5px;
+    }
+    .divActivities
+    {
+        width: 660px;
+        height: 912px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    #activities h1 
+    {
+        width: 798px;
+        margin: 10px auto;
+
+    }
+}
+@media screen and (max-width:980px)
+{
+    .filtres
+    {
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    .posfilters
+    {
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:930px)
+{
+    .divpopu
+    {
+        width: 595px;
+        height: 496px;
+    }
+    .hebergementpopu
+    {
+        width: 530px;
+        margin: 26px auto 0px auto;
+        flex-wrap: wrap;
+    }
+    .divhebergements
+    {
+        width: 595px;
+        height: 688px;
+    }
+    .lieuxhebergements
+    {
+        height: 613px;
+        width: 530px;
+        margin: 20px auto 0px auto;
+        flex-wrap: wrap;
+    }
+    #activities h1
+    {
+        width: 595px;
+    }
+}
+@media screen and (max-width:720px)
+{
+
+    /* RESPONSIVE POPULAIRE */
+    .container
+    {
+        margin: 0px;
+    }
+    .divpopu
+    {
+        width: 100%;
+        height: 580px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .hebergementpopu
+    {
+        margin: 26px auto 35px auto;
+        height: 450px;
+        width: 336px;
+    }
+    .popisole
+    {
+        text-decoration: none;
+        color: black;
+        margin: 0 auto;
+        width: 286px;
+        height: 134px;
+        padding: 5px 52px 5px 5px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 5px 5px 10px #E3E3E3;
+        display: flex;
+    }
+    .ImPop
+    {
+        width: 127px;
+        height: auto;
+        border-radius: 20px 0px 0px 20px;
+        overflow: hidden;
+    }
+    .PosImPop
+    {
+        width: 127px;
+        position: relative;
+        height: 134px;
+        right: 6px;
+        object-fit: cover;
+    }
+    .legendepop
+    {
+        height: 115px;
+        margin: 14px 0px 9px 21px;
+        width: 145px;
+    }    
+    .legendepop p
+    {
+        font-size: 13.5px;
+    }
+    .legendepop h4
+    {
+        font-size: 16.5px;
+        margin-bottom: 5px;
+    }
+    .legendepop div
+    {
+        font-size: 11px;
+        margin-top: 35px;  
+    }
+    .titrepopu
+    {
+        margin: 0px 20px 0px 20px;
+        margin-top: 42px;
+    }
+
+    /* RESPONSIVE HEBERGEMENT */
+
+    .divhebergements
+    {
+        width: 100%;
+        background-color: transparent;
+        height: 1368px;
+        padding: 0px;  
+    }
+    .lieuxhebergements
+    {
+        width: 337px;
+        height: 1255px;
+    }
+    .divhebergements h1
+    {
+        margin-left: 21px;
+    }
+    .affich
+    {
+        margin-left: 21px;
+    }
+    .lieuisole
+    {
+        width: 335px ;
+    }
+    .ImHeb
+    {
+        height: 114px;
+        overflow: hidden;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .PosImHeb
+    {
+        height: 114px;
+        width: 345px;
+        object-fit: cover;
+        position:relative;
+        right: 6px;
+    }
+
+    /* RESPONSIVE ACTIVITE */
+
+    #activities h1
+    {
+        margin: 0px 0px 30px 22px ;
+    }
+    #activities
+    {
+        width: 100%;
+    }
+    .divActivities
+    {
+        width: 335px;
+        height: 1258px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .ImActBig,.ImAct2,.ImAct3,.ImAct5,.ImAct6
+    {
+        height: 134px;
+    }
+    .PosImActBig,.PosImAct2,.PosImAct3,.PosImAct5,.PosImAct6
+    {
+        width: 335px;
+        height: 190px;
+    }
+    .act1,.a2,.a3,.act4,.a5,.a6
+    {
+        height: 190px;
+        width: 335px;
+    }
+    .act5-6,.act2-3
+    {
+        height: 403px;
+    }
+    
+    /* RESPONSIVE FOOTER */
+    footer
+    {
+        margin-top: 48px;
+        flex-direction: column;
+        height: 486px;
+        padding: 0px;
+    }
+    .apropos
+    {
+        margin-top: 49px;
+        margin-left: 7.73%;
+        margin-bottom: 40px;
+    }
+    .noshebergements
+    {
+        margin-left: 7.73%;
+        margin-bottom: 45px;
+    }
+    .assistance
+    {
+        margin-left: 7.73%;
+    }
 }
