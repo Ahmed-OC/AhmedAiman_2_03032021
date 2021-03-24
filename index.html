@@ -2,24 +2,27 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <script src="https://kit.fontawesome.com/5c9a8a8306.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
         <link rel="stylesheet" href="assests/style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/5c9a8a8306.js" crossorigin="anonymous"></script>
+        
     </head>
     <body>
         <div class="container">
             <header>
-                <img src="assests/images/logo/Reservia.svg" alt="logo" >
+                <div class="logoreservia">
+                    <img src="assests/images/logo/Reservia.svg" alt="logo" >
+                </div>
+                
                 <nav>
                     <ul>
                         <li><a href="#hebergements">Hebergements</a></li>
-                        <li><a href="#activities">Activités</a></li>
-                        <li><a href="">S'inscrire</a></li>       
+                        <li><a href="#activities">Activités</a></li>     
                     </ul>
-                </nav>
-            
+                </nav>                
+                <a href="" class="sign">S'inscrire</a>
             </header>
 
             
@@ -34,44 +37,39 @@
                         <input type="text" name="pseudo" value="  Marseille, France"> 
                     </div>
                     <div>
-                        <input type="button" value="Rechercher">
+                        <button type="submit">
+                            <p>Rechercher</p>
+                            <i class="fas fa-search searchlog"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="containerfilters">
                     <h4>Filtres</h4>
                     <div class="filtres">
                             <div class="posfilters">
-                                <div class="logfiltres">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                </div>
-                                <div class="bordfiltre"> 
+                                <div class="bordfiltre">
+                                     <i class="fas fa-money-bill-wave logfiltres"></i>
                                     <input type="button" value="Economique" class="filterbuttons">
                                 </div>
                             </div>
                             
                             <div class="posfilters">
-                                <div class="logfiltres">
-                                    <i class="fas fa-child"></i>
-                                </div>
-                                <div class="bordfiltre">   
+                                <div class="bordfiltre"> 
+                                    <i class="fas fa-child logfiltres"></i>
                                     <input type="button" value="Familial" class="filterbuttons">
                                 </div>
                             </div>
                             
                             <div class="posfilters">
-                                <div class="logfiltres">
-                                    <i class="fas fa-heart"></i>
-                                </div>
-                                <div class="bordfiltre">   
+                                <div class="bordfiltre">
+                                    <i class="fas fa-heart logfiltres"></i> 
                                     <input type="button" value="Romantique" class="filterbuttons">
                                 </div>
                             </div>
                             
                             <div class="posfilters">
-                                <div class="logfiltres">
-                                    <i class="fas fa-dog"></i>
-                                </div>
-                                <div class="bordfiltre">  
+                                <div class="bordfiltre">
+                                    <i class="fas fa-dog logfiltres"></i>  
                                     <input type="button" value="Animaux autorisés" class="filterbuttons">
                                 </div>
                             </div>

@@ -8,7 +8,7 @@
 }
 h1
 {
-    font-size: 22px;
+    font-size: 22.3px;
 }
 
 
@@ -28,16 +28,15 @@ header
     justify-content: space-between;
     margin-top: 49px;
 }
-header ul    
+nav
 {
-    width: 447px;
-    list-style: none;
-    padding: 0px;
+    margin-left: auto;
 }
 header nav ul 
 {
     display: flex;
-    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
 }
 header nav ul li a 
 {
@@ -47,11 +46,12 @@ header nav ul li a
     padding-right: 33.5px;
     padding-left: 33.5px;  
 }
-header nav ul li:nth-child(3) a
+.sign
 {
+    text-decoration: none;
     font-weight: bold;
     color: #0065FC;
-    padding-right: 24px;
+    margin-left: 33.5px;
 }
 
 header nav ul li a:hover
@@ -108,7 +108,7 @@ justify-content: center;
 }
 
 
-.champ div:nth-of-type(3) input
+.champ div:nth-of-type(3) button
 {
     width: 135px;
     height: 53px;                       /* BOUTTON RECHERCHER*/
@@ -120,10 +120,14 @@ justify-content: center;
     font-size: 16px;
     border:1px solid #F2F2F2;
 }
-.champ div:nth-of-type(3) input:hover
+.champ div:nth-of-type(3) button:hover
 {
     cursor: pointer;
     font-size: 17px;
+}
+.searchlog
+{
+    display: none;
 }
 .containerfilters
 {
@@ -142,7 +146,7 @@ justify-content: center;
 {
     display: flex;
     border: 2px solid #d9d9d9;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 40px;
     border-left: none;
     height: 46px;
     
@@ -159,7 +163,7 @@ justify-content: center;
     color: #0065fc;
     border:none;
     position: relative;
-    left: 22px;
+    bottom: 2px;
 }
 .posfilters
 {
@@ -168,6 +172,7 @@ justify-content: center;
 .containerfilters h4
 {
     font-size: 18.5px;
+    margin-right: 32px;
 }
 .filterbuttons
 {
@@ -176,7 +181,7 @@ justify-content: center;
     height: 46px;
     border:none;
     background-color:transparent;
-    padding-left: 30px;
+    padding-left: 5px;
     padding-right: 20px;
     font-weight: bold;
     font-size: 18px;
@@ -191,8 +196,7 @@ justify-content: center;
 .info
 {
     display: flex;
-    justify-content: space-between;
-    width: 446px;
+    max-width: 446px;
     margin-top: 35px;
 }
 .info div 
@@ -210,6 +214,7 @@ justify-content: center;
 .info p
 {
     align-self: center;
+    margin-left: 12px;
     font-size: 15.5px;
 }
 
@@ -686,7 +691,112 @@ footer ul li a:hover
 }
 @media screen and (max-width:720px)
 {
+    /* RESPONSIVE HEADER */
+    header
+    {
+        height: 120px;
+        margin-top: 0px;
 
+    }
+    .logoreservia
+    {
+        height: 45px;
+        margin-left: 3.5%;
+
+    }
+    nav 
+    {
+        margin-top: 30px;
+        height: 45px;
+        align-self: flex-end;
+        width: 100%;
+        position: absolute;
+    }
+    header li 
+    {
+        width: 50%;
+        text-align: center;
+    }
+
+    header nav ul li a 
+    {
+        display: block;
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
+        padding:0px;
+        padding-bottom: 12px;
+    }
+    header nav ul li a:hover
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
+    }
+
+    .sign
+    {
+        height: 45px;
+        margin-right: 3.5%;
+        align-self: center;
+        margin-bottom: 45px;
+    }
+    #recherche
+    {
+        margin-top: 15px;
+    }
+    /* RESPONSIVE FITLRES */
+    .containerfilters
+    {
+        flex-direction: column;
+        margin-top: 42px;
+    }
+    .containerfilters h4
+    {
+        margin-left: 22px;
+    }
+    .filtres
+    {
+        margin-top: 18px;
+        width: 330px;
+    }
+    .filtres
+    {
+        margin-left: 22px;
+    }
+    .info div 
+    {
+        margin-left: 22px;
+        min-height: 27px;
+        min-width: 27px;
+    }
+    
+    /* RESPONSIVE CHAMP */
+    .searchlog
+    {
+        display: block;
+    }
+    button p
+    {
+        display: none;
+    }
+    button
+    {
+        position: relative;
+        right: 20px;
+        bottom: 1px;
+    }
+    .champ div:nth-of-type(3) button
+    {
+        border-radius: 15px;
+        width: 51px;
+    }
+    .champ
+    {
+        margin-left: 22px;
+    }
+    .h1recherche1,.precherche1
+    {
+        margin-left: 22px;
+    }
     /* RESPONSIVE POPULAIRE */
     .container
     {
