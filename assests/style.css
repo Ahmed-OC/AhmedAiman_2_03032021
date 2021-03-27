@@ -230,7 +230,7 @@ justify-content: center;
 }
 .divhebergements
 {
-    width: 798px;
+    width: 60%;
     height: 533px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -253,7 +253,7 @@ justify-content: center;
 {
     text-decoration: none;
     color: black;
-    width: 236px;
+    width: 30%;
     height: 184px;
     padding: 5px 5px 10px 5px;
     border-radius: 20px;
@@ -277,7 +277,7 @@ justify-content: center;
 }
 .PosImHeb
 {
-   width: 246px;
+   width: 104%;
    position: relative;
    height: 114px;
    right: 6px;
@@ -313,7 +313,7 @@ justify-content: center;
 
 .divpopu
 {
-    width: 345px;
+    width: 26%;
     height: 548px;
     padding: 42px 38px 30px 38px;
     background-color: #F2F2F2;
@@ -345,9 +345,9 @@ justify-content: center;
 {
     text-decoration: none;
     color: black;
-    width: 286px;
+    width: 100%;
     height: 134px;
-    padding: 5px 52px 5px 5px;
+    padding: 5px 0px 5px 5px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 10px #E3E3E3;
@@ -355,13 +355,13 @@ justify-content: center;
 }
 .ImPop
 {
-    width: 127px;
+    width: 40%;
     border-radius: 20px 0px 0px 20px;
     overflow: hidden;
 }
 .PosImPop
 {
-   width: 127px;
+   width: 100%;
    position: relative;
    height: 134px;
    right: 6px;
@@ -369,7 +369,7 @@ justify-content: center;
 }
 .legendepop
 {
-    height: 115px;
+    height: 40%;
     margin: 14px 0px 9px 21px;
     width: 145px;
 }
@@ -404,13 +404,13 @@ justify-content: center;
 {
     margin-top: 27px;
     height: 445px;
-    width: 1337px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .act1,.act4
 {
-    width: 302px;
+    width: 22.5%;
     height: 446px;
     box-shadow: 0px 0px 15px #E3E3E3;
     border-radius: 20px;
@@ -423,7 +423,7 @@ justify-content: center;
 }
 .PosImActBig
 {
-    width: 302px;
+    width: 100%;
     height: 446px;
     object-fit: cover;
 }
@@ -443,13 +443,13 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 302px;
+    width: 22.5%;
     height: 446px;
 }
 .a2
 {
     height: 238px;
-    width: 302px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
@@ -461,14 +461,14 @@ justify-content: center;
 }
 .PosImAct2
 {
-    width: 302px;
+    width: 100%;
     height: 238px;
     object-fit: cover;
 }
 .a3
 {
     height: 164px;
-    width: 302px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
@@ -480,14 +480,14 @@ justify-content: center;
 }
 .PosImAct3
 {
-    width: 302px;
+    width: 100%;
     height: 164px;
     object-fit: cover;
 }
 .a5
 {
     height: 197px;
-    width: 302px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
@@ -499,14 +499,14 @@ justify-content: center;
 }
 .PosImAct5
 {
-    width: 302px;
+    width: 100%;
     height: 197px;
     object-fit: cover;
 }
 .a6
 {
     height: 209px;
-    width: 302px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
@@ -518,7 +518,7 @@ justify-content: center;
 }
 .PosImAct6
 {
-    width: 302px;
+    width: 100%;
     height: 209px;
     object-fit: cover;
 }
@@ -582,9 +582,13 @@ footer ul li a:hover
     {
         margin: 0 auto;
     }
+    .divhebergements
+    {
+        width: 800px;
+    }
     .divpopu
     {
-        width: 798px;
+        width: 807px;
         height: 266px;
         margin-bottom: 20px;
     }
@@ -635,16 +639,20 @@ footer ul li a:hover
     }
     .divActivities
     {
-        width: 660px;
-        height: 912px;
+        width: 807px;
+        height: 950px;
         flex-wrap: wrap;
         margin: 0 auto;
     }
     #activities h1 
     {
-        width: 798px;
         margin: 10px auto;
+    }
+    
 
+    .act1,.act4,.PosImActBig,.act2-3,.act5-6,.a2,.PosImAct2,.a3,.PosImAct3,.a5,.PosImAct5,.a6,.PosImAct6
+    {
+        width: 380px;
     }
 }
 @media screen and (max-width:980px)
@@ -684,9 +692,17 @@ footer ul li a:hover
         margin: 20px auto 0px auto;
         flex-wrap: wrap;
     }
-    #activities h1
+    .lieuisole
     {
-        width: 595px;
+        width: 236px;
+    }
+    .divActivities
+    {
+        width: 650px;
+    }
+    .act1,.act4,.PosImActBig,.act2-3,.act5-6,.a2,.PosImAct2,.a3,.PosImAct3,.a5,.PosImAct5,.a6,.PosImAct6
+    {
+        width: 302px;
     }
 }
 @media screen and (max-width:720px)
@@ -756,11 +772,13 @@ footer ul li a:hover
     .filtres
     {
         margin-top: 18px;
-        width: 330px;
-    }
-    .filtres
-    {
+        width: 90%;
         margin-left: 22px;
+        justify-content: initial;
+    }
+    .posfilters
+    {
+        margin-right: 5px;
     }
     .info div 
     {
@@ -793,6 +811,14 @@ footer ul li a:hover
     {
         margin-left: 22px;
     }
+    .champ div:nth-of-type(2)
+    {
+        width: 67%;
+    }
+    .champ div:nth-of-type(2) input
+    {
+        width: 100%;
+    }
     .h1recherche1,.precherche1
     {
         margin-left: 22px;
@@ -813,16 +839,16 @@ footer ul li a:hover
     {
         margin: 26px auto 35px auto;
         height: 450px;
-        width: 336px;
+        width: 95%;
     }
     .popisole
     {
         text-decoration: none;
         color: black;
         margin: 0 auto;
-        width: 286px;
+        width: 100%;
         height: 134px;
-        padding: 5px 52px 5px 5px;
+        padding: 5px 0px 5px 5px;
         border-radius: 20px;
         background-color: white;
         box-shadow: 5px 5px 10px #E3E3E3;
@@ -830,14 +856,14 @@ footer ul li a:hover
     }
     .ImPop
     {
-        width: 127px;
+        width: 40%;
         height: auto;
         border-radius: 20px 0px 0px 20px;
         overflow: hidden;
     }
     .PosImPop
     {
-        width: 127px;
+        width: 100%;
         position: relative;
         height: 134px;
         right: 6px;
@@ -847,7 +873,7 @@ footer ul li a:hover
     {
         height: 115px;
         margin: 14px 0px 9px 21px;
-        width: 145px;
+        width: 40%;
     }    
     .legendepop p
     {
@@ -861,7 +887,7 @@ footer ul li a:hover
     .legendepop div
     {
         font-size: 11px;
-        margin-top: 35px;  
+        margin-top: auto;  
     }
     .titrepopu
     {
@@ -880,7 +906,7 @@ footer ul li a:hover
     }
     .lieuxhebergements
     {
-        width: 337px;
+        width: 95%;
         height: 1255px;
     }
     .divhebergements h1
@@ -893,7 +919,7 @@ footer ul li a:hover
     }
     .lieuisole
     {
-        width: 335px ;
+        width: 100% ;
     }
     .ImHeb
     {
@@ -904,7 +930,7 @@ footer ul li a:hover
     .PosImHeb
     {
         height: 114px;
-        width: 345px;
+        width: 104%;
         object-fit: cover;
         position:relative;
         right: 6px;
@@ -922,7 +948,7 @@ footer ul li a:hover
     }
     .divActivities
     {
-        width: 335px;
+        width: 95%;
         height: 1258px;
         justify-content: space-between;
         flex-direction: column;
@@ -933,17 +959,18 @@ footer ul li a:hover
     }
     .PosImActBig,.PosImAct2,.PosImAct3,.PosImAct5,.PosImAct6
     {
-        width: 335px;
+        width:100%;
         height: 190px;
     }
     .act1,.a2,.a3,.act4,.a5,.a6
     {
         height: 190px;
-        width: 335px;
+        width: 100%;
     }
     .act5-6,.act2-3
     {
         height: 403px;
+        width: 100%;
     }
     
     /* RESPONSIVE FOOTER */
