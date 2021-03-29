@@ -1,11 +1,14 @@
 
-/* GENERAL */
+                                /* GENERAL */
+
+
 *                     /* Reset des marges interieures et exterieur */
 {
     margin: 0px;
     padding: 0px;
     font-family: Raleway,sans-serif;
 }
+
 h1
 {
     font-size: 22.3px;
@@ -28,6 +31,7 @@ header
     justify-content: space-between;
     margin-top: 49px;
 }
+/* Ergonomie du champ de navigation */
 nav
 {
     margin-left: auto;
@@ -46,6 +50,12 @@ header nav ul li a
     padding-right: 33.5px;
     padding-left: 33.5px;  
 }
+header nav ul li a:hover
+{
+    color: #0065FC;
+    border-top:   3px  #0065FC solid ;   
+}
+/* lien s'inscrire */
 .sign
 {
     text-decoration: none;
@@ -54,33 +64,28 @@ header nav ul li a
     margin-left: 33.5px;
 }
 
-header nav ul li a:hover
-{
-    color: #0065FC;
-    border-top:   3px  #0065FC solid ;   
-}
 
+                                 /* RECHERCHE */
 
-
-/* RECHERCHE */
-
-#recherche
+#search
 {
     margin-top: 45px;
 }
-.precherche1
+.p-search
 {
     margin-top: 14px;
 }
-.h1recherche1
+.h1-search
 {
     margin-bottom: 0px; ;
 }
 
-.logo
+/* Mise en forme de la barre de recherche */
+
+.logo-map  
 {
 background-color: #F2F2F2;
-border-bottom-left-radius: 20px ;
+border-bottom-left-radius: 20px ;    /* logo localisation */
 border-top-left-radius: 20px;
 width: 52px;
 height: 52px;
@@ -88,27 +93,24 @@ height: 52px;
 display: flex; 
 align-items: center;
 justify-content: center;
-
-
 }
-.champ
+
+.search-box
 {
     display: flex;
     margin-top: 17px;
 }
-.champ div:nth-of-type(2) input 
+.search-box div:nth-of-type(2) input 
 {
-    font-weight: bold;                  /* CHAMP TEXT */
+    font-weight: bold;                  /* Champ TEXT */
     width: 234px;
     height: 48px;
     font-size: 16px;
-
     border:1px solid #F2F2F2;
-
 }
 
 
-.champ div:nth-of-type(3) button
+.search-box div:nth-of-type(3) button
 {
     width: 135px;
     height: 53px;                       /* BOUTTON RECHERCHER*/
@@ -120,21 +122,20 @@ justify-content: center;
     font-size: 16px;
     border:1px solid #F2F2F2;
 }
-.champ div:nth-of-type(3) button:hover
+.search-box div:nth-of-type(3) button:hover
 {
     cursor: pointer;
     font-size: 17px;
 }
-.searchlog
+.search-logo
 {
     display: none;
 }
-.containerfilters
-{
-    display: flex;
-    align-items: baseline;
-}
-.filtres
+
+/* Ergonomie des filtres */
+
+
+.filters
 {
     margin-top: 31px;
     display: flex;
@@ -142,39 +143,44 @@ justify-content: center;
     width: 930px;
     
 }
-.bordfiltre
+.container-filters
 {
     display: flex;
-    border: 2px solid #d9d9d9;
+    align-items: baseline;
+}
+.border-filters
+{
+    display: flex;
+    border: 2px solid #d9d9d9;   /* bordures des filtres */
     border-radius: 40px;
     border-left: none;
     height: 46px;
     
 }
-.logfiltres
+.logo-filters
 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #DEEBFF;
+    background-color: #DEEBFF;  /* positionnement et mises en forme des logos de filtres */
     border-radius: 30px;
     color: #0065fc;
     border:none;
     position: relative;
     bottom: 2px;
 }
-.posfilters
+.pos-filters
 {
     display: flex;
 }
-.containerfilters h4
+.container-filters h4
 {
     font-size: 18.5px;
     margin-right: 32px;
 }
-.filterbuttons
+.filters-buttons
 {
 
     align-self: center;
@@ -186,9 +192,9 @@ justify-content: center;
     font-weight: bold;
     font-size: 18px;
 }
-.filtres div input:hover
+.filters div input:hover
 {
-    transform: scale(1.05);
+    transform: scale(1.05);   /* Animation des filtres */
     color: #0065FC;
 }
 
@@ -204,7 +210,7 @@ justify-content: center;
     width: 25px;
     height: 25px;
     color: #0065FC;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #d9d9d9;     /* logo d'information */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +228,9 @@ justify-content: center;
 
 
 
-/* HEBERGEMENTS */
+                                    /* HEBERGEMENTS */
+
+/* Partie hebergements a Marseille */
 #hebergements
 {
     display: flex;
@@ -240,42 +248,42 @@ justify-content: center;
 {
     font-size: 22.5px;
 }
-.lieuxhebergements
+.lieux-hebergements
 {
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;    /* flexbox des differents hebergements */
     align-content: space-between;
     height: 428px;
 }
-.lieuisole
+.lieu-isole
 {
     text-decoration: none;
     color: black;
     width: 30%;
     height: 184px;
-    padding: 5px 5px 10px 5px;
+    padding: 5px 5px 10px 5px;       /* case des hebergements unique */
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 10px #E3E3E3;
 }
-.legendeheb
+.description-heb
 {
     display: flex;
     height: 59px;
     justify-content: space-between;
     flex-direction: column;
-    margin: 12px 0px 0px 11px;
-    
+    margin: 12px 0px 0px 11px; 
 }
-.ImHeb            
+/* Positionnement des images d'hebergements */
+.image-heb            
 {
     height: 114px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
-.PosImHeb
+.pos-image-heb
 {
    width: 104%;
    position: relative;
@@ -283,23 +291,23 @@ justify-content: center;
    right: 6px;
    object-fit: cover;
 }
-.legendeheb p
+.description-heb p
 {
     font-size: 13.5px;
 }
-.legendeheb h4
+.description-heb h4
 {
     font-size: 16.5px;
 }
-.legendeheb div
+.description-heb div
 {
     font-size: 11px;  
 }
-.starOn
+.star-on
 {
     color: #0065FC;
 }
-.starOff
+.star-off
 {
     color: #d9d9d9;
 }
@@ -310,7 +318,7 @@ justify-content: center;
     font-size: 19px;
 }
 
-
+/* Partie les plus populaires */
 .divpopu
 {
     width: 26%;
@@ -320,46 +328,47 @@ justify-content: center;
     border-radius: 20px;
     margin-left: 40px;
 }
-.titrepopu
+.title-popu
 {
     display: flex;
     justify-content: space-between;
 }
-.titrepopu i 
+.title-popu i 
 {
     font-size: 22.5px;
 }
-.titrepopu h1
+.title-popu h1
 {
     font-size: 22.5px;
 }
-.hebergementpopu
+.hebergement-popu
 {
     margin-top: 26px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;            /* flexbox des plus populaires */
     justify-content: space-between;
     height: 498px;
 }
-.popisole
+.pop-isole
 {
     text-decoration: none;
     color: black;
     width: 100%;
     height: 134px;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;            /* case des plus populaires unique */
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 10px #E3E3E3;
     display: flex;
 }
-.ImPop
+/* positionnement des images des plus populaire */
+.image-pop
 {
     width: 40%;
     border-radius: 20px 0px 0px 20px;
     overflow: hidden;
 }
-.PosImPop
+.pos-image-pop
 {
    width: 100%;
    position: relative;
@@ -367,22 +376,22 @@ justify-content: center;
    right: 6px;
    object-fit: cover;
 }
-.legendepop
+.description-pop
 {
     height: 40%;
     margin: 14px 0px 9px 21px;
     width: 145px;
 }
-.legendepop p
+.description-pop p
 {
     font-size: 13.5px;
 }
-.legendepop h4
+.description-pop h4
 {
     font-size: 16px;
     margin-bottom: 5px;
 }
-.legendepop div
+.description-pop div
 {
     font-size: 11px;
     margin-top: 35px;  
@@ -391,20 +400,21 @@ justify-content: center;
 
 
 
-/* ACTIVITIES */
-#activities
+                                    /* ACTIVITE */
+
+#activites
 {
     margin-top: 65px;
 }
-#activities h1
+#activites h1
 {
     font-size: 22.5px;
 }
-.divActivities
+.divactivites
 {
     margin-top: 27px;
     height: 445px;
-    width: 100%;
+    width: 100%;                     /* flexbox des activités */
     display: flex;
     justify-content: space-between;
 }
@@ -412,27 +422,28 @@ justify-content: center;
 {
     width: 22.5%;
     height: 446px;
-    box-shadow: 0px 0px 15px #E3E3E3;
+    box-shadow: 0px 0px 15px #E3E3E3;    /* activités 1 et 4 unique */
     border-radius: 20px;
 }
-.ImActBig
+/* positionnements des images des activités 1 et 4 */
+.image-act-big
 {
     height: 391px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
-.PosImActBig
+.pos-image-act-big
 {
     width: 100%;
     height: 446px;
     object-fit: cover;
 }
-.divActivities a
+.divactivites a
 {
     text-decoration: none;
     color: black;
 }
-.divActivities h4
+.divactivites h4
 {
     margin: 18px 0px 0px 19px;
     font-size: 16.5px;
@@ -442,10 +453,11 @@ justify-content: center;
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;     /* flexbox des activités 2 et 3 et des actvités 5 et 6 */
     width: 22.5%;
     height: 446px;
 }
+/* Positionnements des images et dimensionnement des autres activités */
 .a2
 {
     height: 238px;
@@ -453,13 +465,13 @@ justify-content: center;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
-.ImAct2
+.image-act-2
 {
     height: 182px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
-.PosImAct2
+.pos-image-act-2
 {
     width: 100%;
     height: 238px;
@@ -472,13 +484,13 @@ justify-content: center;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
-.ImAct3
+.image-act-3
 {
     height: 109px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
-.PosImAct3
+.pos-image-act-3
 {
     width: 100%;
     height: 164px;
@@ -491,13 +503,13 @@ justify-content: center;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
-.ImAct5
+.image-act-5
 {
     height: 142px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
-.PosImAct5
+.pos-image-act-5
 {
     width: 100%;
     height: 197px;
@@ -510,19 +522,19 @@ justify-content: center;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #E3E3E3;
 }
-.ImAct6
+.image-act-6
 {
     height: 153px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
-.PosImAct6
+.pos-image-act-6
 {
     width: 100%;
     height: 209px;
     object-fit: cover;
 }
-.a2:hover , .a3:hover ,.a5:hover,.a6:hover, .act1:hover,.act4:hover , .popisole:hover , .lieuisole:hover
+.a2:hover , .a3:hover ,.a5:hover,.a6:hover, .act1:hover,.act4:hover , .pop-isole:hover , .lieu-isole:hover
 {
     transform: scale(1.02);
     box-shadow: 0px 0px 10px grey;
@@ -531,7 +543,8 @@ justify-content: center;
 
 
 
-/* FOOTER */
+                                      /* FOOTER */
+
 footer
 {
     background-color: #F2F2F2;
@@ -556,11 +569,11 @@ footer ul li a
     color: black;
     
 }
-.apropos
+.a-propos
 {
     margin-right: 15%;
 }
-.noshebergements
+.nos-hebergements
 {
     margin-right: 19%;
 }
@@ -570,10 +583,13 @@ footer ul li a:hover
 }
 
 
-/* RESPONSIVE DESIGN */
 
-@media screen and (max-width:1440px)
+
+                                 /* RESPONSIVE DESIGN */
+/* Responsive Laptop */
+@media screen and (max-width:1439px)
 {
+    /* Responsive hebergements */
     #hebergements
     {
         flex-direction: column-reverse;
@@ -592,12 +608,12 @@ footer ul li a:hover
         height: 266px;
         margin-bottom: 20px;
     }
-    .hebergementpopu
+    .hebergement-popu
     {
         display: flex;
         flex-direction: row;
     }
-    .popisole
+    .pop-isole
     {
         text-decoration: none;
         color: black;
@@ -609,14 +625,14 @@ footer ul li a:hover
         box-shadow: 5px 5px 10px #E3E3E3;
         display: block;
     }
-    .ImPop
+    .image-pop
     {
         height: 114px;
         width: auto;
         border-radius: 20px 20px 0px 0px;
         overflow: hidden;
     }
-    .PosImPop
+    .pos-image-pop
     {
         width: 246px;
         position: relative;
@@ -624,7 +640,7 @@ footer ul li a:hover
         right: 6px;
         object-fit: cover;
     }
-    .legendepop
+    .description-pop
     {
         display: flex;
         height: 59px;
@@ -633,53 +649,59 @@ footer ul li a:hover
         margin: 12px 0px 0px 11px;
         width: auto;
     }
-    .legendepop div
+    .description-pop div
     {
         margin-top: 5px;
     }
-    .divActivities
+    /* Responsive Activité */
+    .divactivites
     {
         width: 807px;
         height: 950px;
         flex-wrap: wrap;
         margin: 0 auto;
     }
-    #activities h1 
+    #activites h1 
     {
         margin: 10px auto;
     }
     
 
-    .act1,.act4,.PosImActBig,.act2-3,.act5-6,.a2,.PosImAct2,.a3,.PosImAct3,.a5,.PosImAct5,.a6,.PosImAct6
+    .act1,.act4,.pos-image-act-big,.act2-3,.act5-6,.a2,.pos-image-act-2,.a3,.pos-image-act-3,.a5,.pos-image-act-5,.a6,.pos-image-act-6
     {
         width: 380px;
     }
-    #activities
+    #activites
     {
         width: 807px;
         margin: 65px auto 0px auto;
     }
 }
+
 @media screen and (max-width:980px)
 {
-    .filtres
+    /* Responsive filtres */
+    .filters
     {
         width: 700px;
         flex-wrap: wrap;
     }
-    .posfilters
+    .pos-filters
     {
         margin-top: 5px;
     }
 }
+
+/* Responsive tablettes */
 @media screen and (max-width:930px)
 {
+    /* Responsive hebergement */
     .divpopu
     {
         width: 595px;
         height: 496px;
     }
-    .hebergementpopu
+    .hebergement-popu
     {
         width: 530px;
         margin: 26px auto 0px auto;
@@ -690,30 +712,33 @@ footer ul li a:hover
         width: 595px;
         height: 688px;
     }
-    .lieuxhebergements
+    .lieux-hebergements
     {
         height: 613px;
         width: 530px;
         margin: 20px auto 0px auto;
         flex-wrap: wrap;
     }
-    .lieuisole
+    .lieu-isole
     {
         width: 236px;
     }
-    .divActivities
+    /* Responsive Activité */
+    .divactivites
     {
         width: 650px;
     }
-    .act1,.act4,.PosImActBig,.act2-3,.act5-6,.a2,.PosImAct2,.a3,.PosImAct3,.a5,.PosImAct5,.a6,.PosImAct6
+    .act1,.act4,.pos-image-act-big,.act2-3,.act5-6,.a2,.pos-image-act-2,.a3,.pos-image-act-3,.a5,.pos-image-act-5,.a6,.pos-image-act-6
     {
         width: 302px;
     }
-    #activities
+    #activites
     {
         width: 650px;
     }
 }
+
+/* Responsive Smartphone */
 @media screen and (max-width:720px)
 {
     /* RESPONSIVE HEADER */
@@ -721,7 +746,6 @@ footer ul li a:hover
     {
         height: 120px;
         margin-top: 0px;
-
     }
     .logoreservia
     {
@@ -764,28 +788,28 @@ footer ul li a:hover
         align-self: center;
         margin-bottom: 45px;
     }
-    #recherche
+    #search
     {
         margin-top: 15px;
     }
     /* RESPONSIVE FITLRES */
-    .containerfilters
+    .container-filters
     {
         flex-direction: column;
         margin-top: 42px;
     }
-    .containerfilters h4
+    .container-filters h4
     {
         margin-left: 22px;
     }
-    .filtres
+    .filters
     {
         margin-top: 18px;
         width: 90%;
         margin-left: 22px;
         justify-content: initial;
     }
-    .posfilters
+    .pos-filters
     {
         margin-right: 5px;
     }
@@ -796,12 +820,12 @@ footer ul li a:hover
         min-width: 27px;
     }
     
-    /* RESPONSIVE CHAMP */
-    .searchlog
+    /* RESPONSIVE search-box */
+    .search-logo
     {
         display: block;
     }
-    button p
+    button span
     {
         display: none;
     }
@@ -811,24 +835,24 @@ footer ul li a:hover
         right: 20px;
         bottom: 1px;
     }
-    .champ div:nth-of-type(3) button
+    .search-box div:nth-of-type(3) button
     {
         border-radius: 15px;
         width: 51px;
     }
-    .champ
+    .search-box
     {
         margin-left: 22px;
     }
-    .champ div:nth-of-type(2)
+    .search-box div:nth-of-type(2)
     {
         width: 67%;
     }
-    .champ div:nth-of-type(2) input
+    .search-box div:nth-of-type(2) input
     {
         width: 100%;
     }
-    .h1recherche1,.precherche1
+    .h1-search,.p-search
     {
         margin-left: 22px;
     }
@@ -844,13 +868,13 @@ footer ul li a:hover
         padding: 0px;
         border-radius: 0px;
     }
-    .hebergementpopu
+    .hebergement-popu
     {
         margin: 26px auto 35px auto;
         height: 450px;
         width: 95%;
     }
-    .popisole
+    .pop-isole
     {
         text-decoration: none;
         color: black;
@@ -863,14 +887,14 @@ footer ul li a:hover
         box-shadow: 5px 5px 10px #E3E3E3;
         display: flex;
     }
-    .ImPop
+    .image-pop
     {
         width: 40%;
         height: auto;
         border-radius: 20px 0px 0px 20px;
         overflow: hidden;
     }
-    .PosImPop
+    .pos-image-pop
     {
         width: 100%;
         position: relative;
@@ -878,27 +902,27 @@ footer ul li a:hover
         right: 6px;
         object-fit: cover;
     }
-    .legendepop
+    .description-pop
     {
         height: 115px;
         margin: 14px 0px 9px 21px;
         width: 40%;
     }    
-    .legendepop p
+    .description-pop p
     {
         font-size: 13.5px;
     }
-    .legendepop h4
+    .description-pop h4
     {
         font-size: 16.5px;
         margin-bottom: 5px;
     }
-    .legendepop div
+    .description-pop div
     {
         font-size: 11px;
         margin-top: auto;  
     }
-    .titrepopu
+    .title-popu
     {
         margin: 0px 20px 0px 20px;
         margin-top: 42px;
@@ -913,7 +937,7 @@ footer ul li a:hover
         height: 1368px;
         padding: 0px;  
     }
-    .lieuxhebergements
+    .lieux-hebergements
     {
         width: 95%;
         height: 1255px;
@@ -926,17 +950,17 @@ footer ul li a:hover
     {
         margin-left: 21px;
     }
-    .lieuisole
+    .lieu-isole
     {
         width: 100% ;
     }
-    .ImHeb
+    .image-heb
     {
         height: 114px;
         overflow: hidden;
         border-radius: 20px 20px 0px 0px;
     }
-    .PosImHeb
+    .pos-image-heb
     {
         height: 114px;
         width: 104%;
@@ -947,26 +971,26 @@ footer ul li a:hover
 
     /* RESPONSIVE ACTIVITE */
 
-    #activities h1
+    #activites h1
     {
         margin: 0px 0px 30px 22px ;
     }
-    #activities
+    #activites
     {
         width: 100%;
     }
-    .divActivities
+    .divactivites
     {
         width: 95%;
         height: 1258px;
         justify-content: space-between;
         flex-direction: column;
     }
-    .ImActBig,.ImAct2,.ImAct3,.ImAct5,.ImAct6
+    .image-act-big,.image-act-2,.image-act-3,.image-act-5,.image-act-6
     {
         height: 134px;
     }
-    .PosImActBig,.PosImAct2,.PosImAct3,.PosImAct5,.PosImAct6
+    .pos-image-act-big,.pos-image-act-2,.pos-image-act-3,.pos-image-act-5,.pos-image-act-6
     {
         width:100%;
         height: 190px;
@@ -990,13 +1014,13 @@ footer ul li a:hover
         height: 486px;
         padding: 0px;
     }
-    .apropos
+    .a-propos
     {
         margin-top: 49px;
         margin-left: 7.73%;
         margin-bottom: 40px;
     }
-    .noshebergements
+    .nos-hebergements
     {
         margin-left: 7.73%;
         margin-bottom: 45px;
