@@ -678,20 +678,6 @@ footer ul li a:hover
     }
 }
 
-@media screen and (max-width:980px)
-{
-    /* Responsive filtres */
-    .filters
-    {
-        width: 700px;
-        flex-wrap: wrap;
-    }
-    .pos-filters
-    {
-        margin-top: 5px;
-    }
-}
-
 /* Responsive tablettes */
 @media screen and (max-width:930px)
 {
@@ -735,6 +721,16 @@ footer ul li a:hover
     #activites
     {
         width: 650px;
+    }
+    /* Responsive filtres */
+    .filters
+    {
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    .pos-filters
+    {
+        margin-top: 5px;
     }
 }
 
