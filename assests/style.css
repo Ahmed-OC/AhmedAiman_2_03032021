@@ -582,7 +582,30 @@ footer ul li a:hover
 
                                  /* RESPONSIVE DESIGN */
 /* Responsive Laptop */
-@media screen and (max-width:1439px)
+@media screen and (min-width:1024px) and (max-width:1424px)
+{
+    .description-pop h4
+    {
+        font-size: 13px;
+    }
+    .description-pop p
+    {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .description-pop div
+    {
+        font-size: 10px;
+    }
+    .description-heb h4
+    {
+        font-size: 15px;
+    }
+}
+
+
+                            /** MAX WIDTH 1024 PX **/
+@media screen and (max-width:1024px)
 {
     /* Responsive hebergements */
     #hebergements
