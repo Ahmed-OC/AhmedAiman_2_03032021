@@ -50,6 +50,13 @@ header nav ul li a
     padding-right: 33.5px;
     padding-left: 33.5px;  
 }
+header nav ul li .active
+{
+
+    border-top: 3px solid  ;
+    color: #0065fc;
+    border-top-color:  #0065fc ;
+}
 header nav ul li a:hover
 {
     color: #0065FC;
@@ -788,6 +795,11 @@ footer ul li a:hover
         border-bottom: 3px solid #F2F2F2;
         padding:0px;
         padding-bottom: 12px;
+    }
+    header nav ul li .active
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
     }
     header nav ul li a:hover
     {
